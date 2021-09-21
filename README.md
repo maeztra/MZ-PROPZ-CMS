@@ -24,17 +24,17 @@ Aplicativo da VTEX App Store. Responsável pela comunicação com a Propz. Deve 
 
 
 # Instalação das Tags GTM
-O plugin consiste de 4 Tags do GTM e um plugin Vtex. Nesta seção vamos detalhar o processo de instalação das Tags.
+O plugin consiste de 4 tags do GTM e um plugin Vtex. Nesta seção vamos detalhar o processo de instalação das tags.
 
 ## Propz Config
 É a tag de inicialização e configuração do plugin. Deve ser criada sem nenhum acionador. Criar como tag de HTML Personalizado
 
 ![Propz Config](https://user-images.githubusercontent.com/60937226/134207712-ccae7880-ed21-49b6-951d-12ca13e9ffad.png)
 
-Para o funcionamento do plugin, não é necessário fazer nenhuma alteração nesta Tag. Em uma seção posterior do documento será explicado como customizar o plugin.
+Para o funcionamento do plugin, não é necessário fazer nenhuma alteração nesta tag. Em uma seção posterior do documento será explicado como customizar o plugin.
 
 ## Propz Core
-A Tag `Propz Core` deve ser chamada na página em que a vitrine será carregada. Se a vitrine deve aparecer na Home, então a tag deve ser disparada apenas na Home do ecommerce.
+A tag `Propz Core` deve ser chamada na página em que a vitrine será carregada. Se a vitrine deve aparecer na Home, então a tag deve ser disparada apenas na Home do ecommerce.
 Criar como tag de HTML Personalizado
 
 ![Propz Core](https://user-images.githubusercontent.com/60937226/134207830-18e3028c-c63c-40f5-ab1f-021b14c8169e.png)
@@ -45,12 +45,12 @@ Dentro de configurações avançadas, configure para que a tag `Propz Config` se
 
 
 ## Propz Checkout 
-A Tag `Propz Checkout` deve ser disparada apenas nas páginas de checkout, ou seja, as páginas que iniciam com /checkout na URL. Criar como tag de HTML Personalizado
+A tag `Propz Checkout` deve ser disparada apenas nas páginas de checkout, ou seja, as páginas que iniciam com /checkout na URL. Criar como tag de HTML Personalizado
 
 ![Propz Checkout](https://user-images.githubusercontent.com/60937226/134208305-a06bac3b-c7de-4f5e-8ba2-87f2137eefb4.png)
 
 ## Propz Orderplaced
-A Tag `Propz Checkout` deve ser disparada apenas na página de finalização do pedido ou no evento de finalização do pedido. Criar como tag de HTML Personalizado
+A tag `Propz Checkout` deve ser disparada apenas na página de finalização do pedido ou no evento de finalização do pedido. Criar como tag de HTML Personalizado
 
 ![Propz Orderplaced](https://user-images.githubusercontent.com/60937226/134208914-ad669f4c-c9b1-42a9-a497-a3d4bfcc8a08.png)
 
@@ -94,7 +94,7 @@ Lista de variáveis.
 | name | Nome do produto  |
 | listPrice | Preço "De". Preço mais alto  |
 | sellingPrice | Preço "Por". Menor preço  |
-| buttonTemplate | Bloco de HTML dos botões da vitrine. Este bloco não é diretamente customizável por variáveis de template, pois alterações feitas no bloco podem afetar as funcionalidades. Para alterar os textos dos botões, use o objeto `config` na Tag `Propz Config`  |
+| buttonTemplate | Bloco de HTML dos botões da vitrine. Este bloco não é diretamente customizável por variáveis de template, pois alterações feitas no bloco podem afetar as funcionalidades. Para alterar os textos dos botões, use o objeto `config` na tag `Propz Config`  |
 
 
 **shelfHtml Padrão:** 
@@ -135,7 +135,7 @@ HTML que será mostrado caso o usuário não esteja logado.
 **Lista de variáveis:**
 | Variável | Descrição  |
 |--|--|
-| clickToLoginBtn | Botão para o usuário se logar. Texto do botão definido na variável `config`, na Tag `Propz Config`  |
+| clickToLoginBtn | Botão para o usuário se logar. Texto do botão definido na variável `config`, na tag `Propz Config`  |
 
 **vtexSigninHtml Padrão:**
 ```
@@ -165,7 +165,7 @@ Html mostrado caso o usuário esteja logado, mas ainda não possua cadastro no s
 **Lista de variáveis:**
 | Variável | Descrição  |
 |--|--|
-| signUpBtn | Botão para o usuário se cadastrar. Será direcionado para o link enviado cadastadrado no campo `Form Url` dentro do App Vtex. Para alterar o texto do botão, altere o objeto `config` dentro da Tag `Propz Config`   |
+| signUpBtn | Botão para o usuário se cadastrar. Será direcionado para o link enviado cadastadrado no campo `Form Url` dentro do App Vtex. Para alterar o texto do botão, altere o objeto `config` dentro da tag `Propz Config`   |
 
 **signupHtml Padrão:**
 ```            
