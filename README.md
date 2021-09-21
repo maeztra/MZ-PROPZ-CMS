@@ -65,10 +65,10 @@ A customização do Plugin é feita a partir da tag `Propz Config`. Na tag há u
 |--|--| -- |
 |containerClass |`String`  |A classe que o plugin deve renderizar a vitrine. Padrão: `".propz-container-div"`|
 |clickToActivateOfferText|`String`  | Mensagem que aparecerá dentro do botão de ativar oferta na vitrine, acima do botão comprar. Padrão:  `"Ativar Oferta"`|
-|activatedOfferText|`String`  | Mensagem mostrada no botão após o usuário ativar a oferta. Padrão:`"Oferta Ativada!"`  |
-|addToCartText|`String`  | Mensagem no botão de adicionar ao carrinho. Padrão:`"Adicionar ao Carrinho"`   |
+|activatedOfferText|`String`  | Mensagem mostrada no botão após o usuário ativar a oferta. Padrão: `"Oferta Ativada!"`  |
+|addToCartText|`String`  | Mensagem no botão de adicionar ao carrinho. Padrão: `"Adicionar ao Carrinho"`   |
 |clickToLoginText|`String`  | Mensagem mostrada no botão de login quando o usuário não estiver logado. Padrão: `"Clique para se logar"` |
-|signUpButtonText|`String`  |Mensagem mostrada quando o usuário está logado mas ainda não está cadastrado no sistema Propz. Padrão:`"Clique para se cadastrar"`|
+|signUpButtonText|`String`  |Mensagem mostrada quando o usuário está logado mas ainda não está cadastrado no sistema Propz. Padrão: `"Clique para se cadastrar"`|
 |addToCartCallback|`Function`  | Função de callback chamada após a adição de um produto pela vitrine do plugin. Parâmetros aceitos: `event`,`item`,`orderForm` e `buttonElement`  |
 |failedAddToCartCallback|`Function`  | Função de callback caso a adição do produto ao carrinho falhe. Muitas vezes a adição de produtos ao carrinho falha pois multiplas tentativas foram feitas em paralelo (adicionando mais um produto antes da requisição anterior terminar). Neste caso, as requisições anteriores são **canceladas**, mantendo apenas a requisição mais recente. Parâmetros aceitos: `item`,`error`,`buttonElement`  |
 |priceFormatter|`Function`  | Função para formatação de preço, recebe de parâmetro um `float`. Padrão:`(value)=>value.toLocaleString("pt-br",{style:  "currency", currency:  'BRL'})`   |
